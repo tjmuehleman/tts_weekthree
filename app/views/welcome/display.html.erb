@@ -1,0 +1,8 @@
+
+<%if (@first_name != "" && @first_name != nil) && (@last_name != "" && @last_name != nil)%>
+	<h1>Welcome to the website <%=@first_name%> <%=@last_name%></h1>
+<%elsif(@first_name != "" && @first_name != nil) && (@last_name == "" || @last_name == nil)%>
+	<h1>Whoops, forgot the last name</h1>
+<%else%>
+	<h1>Uh, you didn't tell us anything did you?</h1>
+<%end%>
